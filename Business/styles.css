@@ -1,0 +1,261 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  margin: 0 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #007BFF;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: #fff;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.9)), url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  background: #fff;
+  color: #007BFF;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-content .btn:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #007BFF;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.service-card h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-details {
+  background: #f8f9fa;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none;
+}
+
+.service-details.hidden {
+  display: none;
+}
+
+.service-details h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.service-details .btn {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.service-details .btn:hover {
+  background: #0056b3;
+}
+
+/* Team Section */
+.members {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background: #ddd;
+}
+
+.team-one,
+.team-two,
+.team-three {
+  background-size: cover;
+  background-position: center;
+}
+
+.team-one {
+  background-image: url('https://via.placeholder.com/150');
+}
+
+.team-two {
+  background-image: url('https://via.placeholder.com/150');
+}
+
+.team-three {
+  background-image: url('https://via.placeholder.com/150');
+}
+
+/* Contact Section */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form .btn {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#contact-form .btn:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}

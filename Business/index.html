@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">BusinessName</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Welcome to BusinessCo</h1>
+      <p>Your success starts here</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <a href="C:\Users\RUDRAMUNISWAMY\Desktop\bhuvan\Business\Consultancy\index.html" target="_blank">
+        <div class="service-card" onclick="showServiceDetails('consulting')">
+          <h3>Consulting</h3>
+          <p>Expert advice to boost your business growth.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="service-card" onclick="showServiceDetails('marketing')">
+          <h3>Marketing</h3>
+          <p>Strategic campaigns tailored to your needs.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="service-card" onclick="showServiceDetails('development')">
+          <h3>Development</h3>
+          <p>Innovative solutions for digital transformation.</p>
+        </div>
+      </a>
+    </div>
+    <div id="service-details" class="service-details hidden">
+      <h3 id="service-title"></h3>
+      <p id="service-description"></p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section">
+    <h2>Meet Our Team</h2>
+    <div class="members">
+      <div class="team-member">
+        <div class="team-img team-one"></div>
+        <h5>Member 1</h5>
+      </div>
+      <div class="team-member">
+        <div class="team-img team-two"></div>
+        <h5>Member 2</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BusinessName. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Consultation Page</title>
+  <link rel="stylesheet" href="consultation.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">ConsultCo</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Book Your Consultation</h1>
+      <p>Expert advice tailored to your needs.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section id="consultation" class="section">
+    <div class="container">
+      <h2>Schedule a Consultation</h2>
+      <p>Fill out the form below, and we’ll get back to you soon.</p>
+      <form id="consultation-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+        <textarea id="message" name="message" placeholder="Briefly describe your needs" rows="4" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ConsultCo. All Rights Reserved.</p>
+  </footer>
+  <script src="consultation.js"></script>
+</body>
+</html>
